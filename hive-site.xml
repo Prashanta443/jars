@@ -1,0 +1,38 @@
+<configuration>
+    <property>
+        <name>fs.s3a.access.key</name>
+        <value>adminuser</value>
+    </property>
+
+    <property>
+        <name>fs.s3a.secret.key</name>
+        <value>admin123</value>
+    </property>
+
+    <property>
+        <name>fs.s3a.endpoint</name>
+        <value>http://datanature-k3s-vm.eastus.cloudapp.azure.com:32100</value>
+    </property>
+
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://dn-hive-metastore.dn-hive-metastore.svc.cluster.local:9083</value>
+    </property>
+
+    <property>
+    <name>fs.s3a.path.style.access</name>
+    <value>true</value>
+    </property>
+
+    <property>
+    <name>fs.s3a.connection.ssl.enabled</name>
+    <value>false</value>
+    <description>Enables or disables SSL connections to S3.</description>
+    </property>
+
+    <property>
+    <name>iceberg.catalog.warehouse</name>
+    <value>s3a://dn-data/hive/warehouse</value>
+    </property>
+
+</configuration>
